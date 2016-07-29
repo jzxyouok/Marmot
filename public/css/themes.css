@@ -1,0 +1,45 @@
+body, html{
+    font-family: "Lucida Grande", Lucida Sans Unicode, Hiragino Sans GB, WenQuanYi Micro Hei, Verdana, Aril, sans-serif;
+
+    background: #FCFCFC;
+}
+
+.header {
+    background: #FFFFFF;
+    border-bottom: 1px solid #ddd;
+}
+
+.header .navbar-default{
+    border: none;
+    border-radius: 0;
+    margin: 0px;
+
+    min-height: 40px;
+}
+
+.header .navbar-nav > li > a {
+    padding: 10px 16px;
+}
+
+.cover{
+    height: 420px;
+    position: relative;
+    width: 100%;
+
+    margin: 0;
+}
+.cover .curtain{
+    margin: 0;
+    padding: 0;
+}
+.cover .curtain > li {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+
+    background-size: auto 100%;
+    background-origin: content-box;
+    background-position: top center;
+}

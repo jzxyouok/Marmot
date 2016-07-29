@@ -1,12 +1,49 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
+
+/**
+ * 视频播放页面
+ */
+
+Route::controller('watch/{video?}', "WatchController");
+
+/**
+ * 用户频道频道页面
+ */
+
+Route::controller("channels", "ChannelsController");
+
+/**
+ * 用户登陆和注册页面
+ */
+
+Route::controller("passport", "Auth\\AuthController");
+
+
+/**
+ * 用户管理中心页面
+ */
+
+Route::controller("dashboard", "DashboardController");
+
+/**
+ * API接口路由
+ */
+
+/**
+ * 会员(电影票)购买
+ */
+
+Route::controller("tickets", "TicketsController");
+
+/**
+ * 视频上传页面
+ */
+
+Route::controller("uploads", "UploadsController");
+
+/**
+ * 首页默认页面
+ */
+
+Route::controller("/", "HomeController");
