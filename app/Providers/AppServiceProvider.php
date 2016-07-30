@@ -4,6 +4,8 @@ namespace Marmot\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
+use Marmot\Route;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -13,7 +15,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        view()->composer('*', function(){
+            Route::all();
+        });
     }
 
     /**

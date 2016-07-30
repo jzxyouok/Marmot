@@ -11,7 +11,8 @@ Route::controller('watch/{video?}', "WatchController");
  * 用户频道频道页面
  */
 
-Route::controller("channels", "ChannelsController");
+Route::controller("channel/{route?}", "ChannelsController");
+Route::get("channels", "ChannelsController@getHome");
 
 /**
  * 用户登陆和注册页面

@@ -6,19 +6,22 @@ body, html{
 
 .header {
     background: #FFFFFF;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #111;
 }
 
 .header .navbar-default{
     border: none;
     border-radius: 0;
     margin: 0px;
+    background: #ffd900;
+    box-shadow: none;
 
     min-height: 40px;
 }
 
 .header .navbar-nav > li > a {
     padding: 10px 16px;
+    color: #111;
 }
 
 .cover{
