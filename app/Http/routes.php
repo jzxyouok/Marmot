@@ -44,6 +44,12 @@ Route::controller("tickets", "TicketsController");
 Route::controller("uploads", "UploadsController");
 
 /**
+ * 搜索页面
+ */
+
+Route::controller("search", "SearchController");
+
+/**
  * 首页默认页面
  */
 
