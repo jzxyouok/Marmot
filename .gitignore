@@ -8,19 +8,21 @@ Homestead.json
 =======
 vendor/
 node_modules/
+<<<<<<< HEAD
 .idea/*
+=======
+.idea/
+>>>>>>> eaf6be4e830421c42a003db07e53b79b1c89e267
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
-
-# Laravel 5 & Lumen specific
 bootstrap/cache/
 .env.*.php
 .env.php
 .env
+<<<<<<< HEAD
 .idea/workspace.xml
 
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
+=======
+>>>>>>> eaf6be4e830421c42a003db07e53b79b1c89e267
 .rocketeer/
 >>>>>>> c205d53f1d25edb51ba012a582d4d36af86213bf
