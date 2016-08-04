@@ -50,6 +50,14 @@ Route::controller("uploads", "UploadsController");
 Route::controller("search", "SearchController");
 
 /**
+ * 播放纪录
+ */
+
+Route::controller("feed/history", "Feed\\HistoryController");
+Route::controller("feed/subscriptions", "Feed\\SubscriptionsController");
+
+
+/**
  * 首页默认页面
  */
 
