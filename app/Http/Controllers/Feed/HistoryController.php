@@ -9,5 +9,7 @@ use Marmot\Http\Controllers\Controller;
 
 class HistoryController extends Controller
 {
-    //
+    public function getIndex(){
+        return view("feed.history");
+    }
 }

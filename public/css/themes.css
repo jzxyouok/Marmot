@@ -17,6 +17,10 @@ body{
     top: 0;
 }
 
+.app-not{
+    margin-top: 40px;
+}
+
 .header .banner{
     background: #252831;
     height: 70px;
@@ -59,6 +63,15 @@ body{
     opacity: 0.9;
     min-height: 40px;
 }
+
+.header .navbar-default.float-active{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    transition: box-shadow .9s;
+}
+
 .header .navbar-default .hot {
     padding: 7px 4px;
 }
@@ -105,8 +118,18 @@ body{
     padding: 0px;
     margin-left: 20px;
 }
-
 .header .um a{
+    line-height: 20px;
+    float: left;
+    display: inline-block;
+    padding: 3px 10px;
+    text-decoration: none;
+    color: #f0ad4e;
+    font-size: 12px;
+    border: 1px solid #f0ad4e;
+    border-radius: 3px;
+}
+.header .um a.sign-btn{
     line-height: 20px;
     float: left;
     display: inline-block;
@@ -156,4 +179,31 @@ body{
 }
 .main .hot-show img{
     width: 100%;
+}
+
+.footer {
+    background: #ddd;
+    color: inherit;
+
+    padding: 26px 0;
+}
+
+
+.footer ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.footer ul h1 {
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    padding: 0 0 14px;
+}
+.footer ul li {
+    padding: 10px 0;
+}
+
+.uploads {
+    padding: 40px 0;
 }

@@ -18,16 +18,16 @@ use Marmot\Channels;
 class ChannelsController extends Controller
 {
     public function getIndex($route = null){
-        $result = Channels::where('route', $route)->firstOrFail();
-
-        dump($result);
-
-        if (empty($route)){
-            echo 'Route Not found!';
+        if (!is_null($route)){
+            return view('channels', ['template' => $route]);
+        }else{
+            return redirect('channels');
         }
+
+        return "Error!";
     }
 
     public function getHome(){
-        return "Hello Here is Home on Channels!";
+        return 'Channels!';
     }
 }

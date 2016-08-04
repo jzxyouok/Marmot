@@ -11,8 +11,8 @@ Route::controller('watch/{video?}', "WatchController");
  * 用户频道频道页面
  */
 
-Route::controller("channel/{route?}", "ChannelsController");
 Route::get("channels", "ChannelsController@getHome");
+Route::controller("channel/{route?}", "ChannelsController");
 
 /**
  * 用户登陆和注册页面
@@ -56,6 +56,12 @@ Route::controller("search", "SearchController");
 Route::controller("feed/history", "Feed\\HistoryController");
 Route::controller("feed/subscriptions", "Feed\\SubscriptionsController");
 
+
+/**
+ * 主要导航页面路由
+ */
+
+Route::get("{page}", "PagesController@getIndex");
 
 /**
  * 首页默认页面

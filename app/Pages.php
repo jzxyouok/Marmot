@@ -4,7 +4,7 @@ namespace Marmot;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Channels extends Model
+class Navigation extends Model
 {
-    protected $table = 'channels';
+    //
 }

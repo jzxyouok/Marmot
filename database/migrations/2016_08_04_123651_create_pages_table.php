@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCommentsTable extends Migration
+class CreatePagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,10 +12,14 @@ class CreateCommentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('comments', function (Blueprint $table) {
+        Schema::create('pages', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('video_id');
-            $table->text('message');
+            $table->integer('sort')->default(0);
+            $table->string('name');
+            $table->string('route');
+            $table->integer('decollator')->default(0);
+            $table->integer('enable')->default(1);
+            $table->string('template');
             $table->timestamps();
         });
     }
@@ -27,6 +31,6 @@ class CreateCommentsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('comments');
+        Schema::drop('pages');
     }
 }
